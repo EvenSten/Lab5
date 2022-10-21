@@ -80,6 +80,8 @@ public class ShoppingListServlet extends HttpServlet {
             }
             
             request.getSession().setAttribute("items", items);
+        }else if (action.equals("logout")){
+            this.getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
         }
         
         

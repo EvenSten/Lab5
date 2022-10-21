@@ -29,5 +29,12 @@
                 
                 <button type="submit">Delete</button>
         </form>
+        
+        <br>
+        
+        <form action="shoppingList" method="post">
+             <input type="hidden" name="action" value="logout">
+             <button type="submit">Log Out</button>
+        </form>
     </body>
 </html>
