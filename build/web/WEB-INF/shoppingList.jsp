@@ -22,16 +22,12 @@
         <form action="shoppingList" method="post">
             <input type="hidden" name="action" value="delete">
             <c:forEach var="item" items="${items}">
-                <label><input type="radio" name="item" <c:out value="${item}"/>> ${item}</label>
+                <label><input type="radio" name="item" value="${item}"> <c:out value="${item}"/></label>
                 <br>
             </c:forEach>
                 <br>
                 
                 <button type="submit">Delete</button>
-                
-                <br>
-                <br>
-                <button type="submit">Log out</button>
         </form>
     </body>
 </html>
